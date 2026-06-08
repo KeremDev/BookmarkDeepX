@@ -60,10 +60,19 @@ BookmarkDeepX does not call the X API. It works through the user's logged-in X w
 
 ## Development
 
+Install dependencies:
+
 ```bash
 npm ci
+```
+
+Run the local dashboard preview:
+
+```bash
 npm run dev
 ```
+
+This starts the Vite UI preview. It is useful for interface work, but it does not run Chrome extension APIs, content scripts, or background service worker behavior.
 
 Run tests and build:
 
@@ -71,6 +80,14 @@ Run tests and build:
 npm test
 npm run build
 ```
+
+Test the extension locally:
+
+1. Run `npm run build`.
+2. Open `chrome://extensions`.
+3. Enable **Developer Mode**.
+4. Click **Load unpacked**.
+5. Select the generated `dist` folder.
 
 Create the installable extension ZIP:
 
