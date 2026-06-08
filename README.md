@@ -60,7 +60,17 @@ BookmarkDeepX does not call the X API. It works through the user's logged-in X w
 
 ## Development
 
-Install dependencies:
+This section is only for developers and contributors. If you only want to use BookmarkDeepX, follow **Quick Install** above and download the release ZIP.
+
+| Command | What it does |
+| --- | --- |
+| `npm ci` | Installs the exact project dependencies from `package-lock.json`. |
+| `npm run dev` | Starts the local Vite dashboard preview for UI work. This is not the full Chrome extension runtime. |
+| `npm test` | Runs parser tests for captured X bookmark responses. |
+| `npm run build` | Builds the Chrome extension files into the `dist` folder. |
+| `npm run package:extension` | Builds the extension and creates the installable ZIP file. |
+
+Install project dependencies:
 
 ```bash
 npm ci
@@ -72,7 +82,7 @@ Run the local dashboard preview:
 npm run dev
 ```
 
-This starts the Vite UI preview. It is useful for interface work, but it does not run Chrome extension APIs, content scripts, or background service worker behavior.
+This is useful for interface work, but it does not run Chrome extension APIs, content scripts, or background service worker behavior.
 
 Run tests and build:
 
