@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+.npm-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+dist/
+release/
+.vite/
+coverage/
+
+*.local
