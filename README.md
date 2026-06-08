@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-35d39d.svg)](LICENSE)
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-111827)](https://github.com/KeremDev/BookmarkDeepX/releases/latest)
 
-BookmarkDeepX is a local-first workspace for managing X bookmarks without the X API. Search, title, tag, folder, task, sync, export, import, and remove bookmarks from X from a fast masonry board.
+BookmarkDeepX is a local-first workspace for managing X bookmarks without official X API access, developer keys, or a backend server. Search, title, tag, folder, task, sync, export, import, and remove bookmarks from X from a fast masonry board.
 
 ## Quick Install
 
@@ -32,11 +32,11 @@ No terminal or `npm` commands are required for regular use.
 
 ## Features
 
-- Sync bookmarks from the user's active X session.
+- Sync bookmarks from the user's logged-in X web session.
 - Search by bookmark text, title, tag, folder, author, or handle.
 - Filter by media type, text, tasks, folders, and tags.
 - Add local titles, tags, folders, and tasks.
-- Remove a bookmark from BookmarkDeepX and X.
+- Remove a bookmark from BookmarkDeepX and sync the removal to X when the user's X session is available.
 - Open the original X bookmark or author profile.
 - Export and import local BookmarkDeepX data.
 - Switch language between Turkish and English.
@@ -44,7 +44,7 @@ No terminal or `npm` commands are required for regular use.
 
 ## How It Works
 
-BookmarkDeepX does not call the X API. It works through the user's logged-in X web session:
+BookmarkDeepX does not use official X API credentials. It works through the user's logged-in X web session:
 
 - A content script runs on `x.com` and `twitter.com`.
 - A small page bridge observes relevant X web requests.
@@ -57,7 +57,7 @@ BookmarkDeepX does not call the X API. It works through the user's logged-in X w
 - No backend server.
 - No telemetry.
 - No external analytics.
-- No X API token.
+- No official X API token or developer app.
 - Bookmark metadata stays on the user's device in Chrome local storage.
 
 ## Development
@@ -134,7 +134,7 @@ In Chrome local storage on your device. Use Export/Import from Settings to back 
 
 ## Türkçe
 
-BookmarkDeepX, X bookmark'larını X API kullanmadan yönetmek için local-first bir Chrome eklentisidir. Arama, başlık ekleme, etiketleme, klasörleme, task oluşturma, X ile senkron kaldırma, dışa/içe aktarma ve Türkçe/İngilizce dil desteği sunar.
+BookmarkDeepX, X bookmark'larını resmi X API erişimi, developer token veya backend sunucu olmadan yönetmek için local-first bir Chrome eklentisidir. Arama, başlık ekleme, etiketleme, klasörleme, task oluşturma, X ile senkron kaldırma, dışa/içe aktarma ve Türkçe/İngilizce dil desteği sunar.
 
 ### Hızlı Kurulum
 
@@ -150,7 +150,7 @@ Normal kullanım için terminal veya `npm` komutu çalıştırman gerekmez.
 
 ### Güvenlik ve Gizlilik
 
-- X API kullanılmaz.
+- Resmi X API token'ı veya developer app gerekmez.
 - Backend veya dış sunucu yoktur.
 - Telemetry veya analytics yoktur.
 - Bookmark verileri cihazındaki Chrome local storage içinde tutulur.
