@@ -10,6 +10,8 @@ BookmarkDeepX is a local-first workspace for managing X bookmarks without the X 
 
 ## Quick Install
 
+No terminal or `npm` commands are required for regular use.
+
 1. Download `BookmarkDeepX-v1.0.0.zip` from [GitHub Releases](https://github.com/KeremDev/BookmarkDeepX/releases/latest).
 2. Unzip the file.
 3. Open `chrome://extensions`.
@@ -60,7 +62,10 @@ BookmarkDeepX does not call the X API. It works through the user's logged-in X w
 
 ## Development
 
-This section is only for developers and contributors. If you only want to use BookmarkDeepX, follow **Quick Install** above and download the release ZIP.
+This section is only for developers and contributors. Regular users do not need these commands.
+
+<details>
+<summary>Developer setup and commands</summary>
 
 | Command | What it does |
 | --- | --- |
@@ -107,6 +112,8 @@ npm run package:extension
 
 The ZIP is written to `release/BookmarkDeepX-v1.0.0.zip`.
 
+</details>
+
 ## FAQ
 
 ### Does X need to be open?
@@ -130,6 +137,8 @@ In Chrome local storage on your device. Use Export/Import from Settings to back 
 BookmarkDeepX, X bookmark'larını X API kullanmadan yönetmek için local-first bir Chrome eklentisidir. Arama, başlık ekleme, etiketleme, klasörleme, task oluşturma, X ile senkron kaldırma, dışa/içe aktarma ve Türkçe/İngilizce dil desteği sunar.
 
 ### Hızlı Kurulum
+
+Normal kullanım için terminal veya `npm` komutu çalıştırman gerekmez.
 
 1. [GitHub Releases](https://github.com/KeremDev/BookmarkDeepX/releases/latest) sayfasından `BookmarkDeepX-v1.0.0.zip` dosyasını indir.
 2. ZIP dosyasını aç.
