@@ -15,7 +15,7 @@ BookmarkDeepX is a local-first workspace for managing X bookmarks without the X 
 3. Open `chrome://extensions`.
 4. Enable **Developer Mode**.
 5. Click **Load unpacked**.
-6. Select the unzipped folder that contains `manifest.json`.
+6. Select the unzipped BookmarkDeepX folder. Do not select `manifest.json` directly; Chrome needs the folder that contains it.
 7. Open BookmarkDeepX from the extension icon.
 
 ## Screenshots
@@ -97,7 +97,7 @@ Test the extension locally:
 2. Open `chrome://extensions`.
 3. Enable **Developer Mode**.
 4. Click **Load unpacked**.
-5. Select the generated `dist` folder.
+5. Select the generated `dist` folder. This folder contains the extension `manifest.json`.
 
 Create the installable extension ZIP:
 
@@ -136,7 +136,7 @@ BookmarkDeepX, X bookmark'larını X API kullanmadan yönetmek için local-first
 3. `chrome://extensions` sayfasına git.
 4. **Developer Mode** seçeneğini aç.
 5. **Load unpacked** butonuna bas.
-6. `manifest.json` bulunan klasörü seç.
+6. ZIP'ten çıkan BookmarkDeepX klasörünü seç. `manifest.json` dosyasını tek başına seçme; Chrome bu dosyanın bulunduğu klasörü ister.
 7. BookmarkDeepX'i eklenti ikonundan aç.
 
 ### Güvenlik ve Gizlilik
